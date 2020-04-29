@@ -32,8 +32,8 @@
                 document.cookie = name + '=' + value
                     + ';expires=' + date.toUTCString()
                     + ';domain=' + COOKIE_DOMAIN
-                    + ';secure'
                     + ';samesite'
+                    + ';secure'
                     + ';path=/{{ config('session.secure') ? ';secure' : null }}';
             }
 
